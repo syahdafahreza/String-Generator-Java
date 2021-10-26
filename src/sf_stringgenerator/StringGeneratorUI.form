@@ -34,7 +34,7 @@
                   <Group type="102" attributes="0">
                       <Component id="jButton1" min="-2" pref="187" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="btnResetForm" min="-2" max="-2" attributes="0"/>
+                      <Component id="aboutBtn" min="-2" pref="87" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="chkNmDigit" min="-2" max="-2" attributes="0"/>
@@ -61,8 +61,8 @@
                               <Component id="chkUpLetter" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="chkLoLetter" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="aboutBtn" min="-2" pref="87" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                          <Component id="btnResetForm" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -93,17 +93,17 @@
               <Component id="chkNmDigit" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="chkUpLetter" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="chkLoLetter" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="aboutBtn" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="btnResetForm" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jButton1" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                  <Component id="btnResetForm" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="aboutBtn" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="13" max="32767" attributes="0"/>
+              <EmptySpace pref="14" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
