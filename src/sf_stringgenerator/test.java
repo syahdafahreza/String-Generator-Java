@@ -11,7 +11,7 @@ import javax.swing.*;
 import javax.swing.text.*;
 import java.lang.Thread.State;
 
-class CustomDocumentFilter extends DocumentFilter
+class CustomDocumentFilterTest extends DocumentFilter
 {
     @Override public void replace (DocumentFilter.FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
         String textAfterReplacement = new StringBuilder (fb.getDocument ().getText (0, fb.getDocument ().getLength ())).replace (offset, offset + length, text).toString ();
