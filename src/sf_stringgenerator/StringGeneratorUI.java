@@ -16,12 +16,13 @@ class CustomDocumentFilter extends DocumentFilter
         String textAfterReplacement = new StringBuilder (fb.getDocument ().getText (0, fb.getDocument ().getLength ())).replace (offset, offset + length, text).toString ();
         try {
             int value = Integer.parseInt (textAfterReplacement);
-            if (value < 1) value = 1;
+            if (value < 1 ) value = 1;
             else if (value > 10) value = 10;
             super.replace (fb, 0, fb.getDocument ().getLength (), String.valueOf (value), attrs);
         }
         catch (NumberFormatException e) {
             // Handle exception ...
+
         }
     }
 }
@@ -62,20 +63,25 @@ public class StringGeneratorUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        strGenField = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        strLongCharField = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         chkNmDigit = new javax.swing.JCheckBox();
         chkUpLetter = new javax.swing.JCheckBox();
         chkLoLetter = new javax.swing.JCheckBox();
-        jButton1 = new javax.swing.JButton();
+        btnGetString = new javax.swing.JButton();
         btnResetForm = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         aboutBtn = new javax.swing.JButton();
+        int min = 1;
+        int max = 10;
+        int step = 1;
+        int i = 1;
+        SpinnerModel value = new SpinnerNumberModel(i, min, max, step);
+        spnGenCharField = new javax.swing.JSpinner(value);
+        spnLongCharField = new javax.swing.JSpinner();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("String Generator 1.0");
@@ -86,20 +92,11 @@ public class StringGeneratorUI extends javax.swing.JFrame {
             }
         });
 
-        strGenField.setText("1");
-        strGenField.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                strGenFieldKeyTyped(evt);
-            }
-        });
-
         jLabel1.setText("Generate");
 
         jLabel2.setText("random strings. (max 10)");
 
         jLabel3.setText("Each string should be");
-
-        strLongCharField.setText("10");
 
         jLabel4.setText("characters long. (max 25)");
 
@@ -112,10 +109,10 @@ public class StringGeneratorUI extends javax.swing.JFrame {
 
         chkLoLetter.setText("Lowercase letters (a-z)");
 
-        jButton1.setText("Get Strings");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnGetString.setText("Get Strings");
+        btnGetString.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnGetStringActionPerformed(evt);
             }
         });
 
@@ -133,6 +130,9 @@ public class StringGeneratorUI extends javax.swing.JFrame {
             }
         });
 
+        spnGenCharField.setModel(new javax.swing.SpinnerNumberModel(1, 1, 10, 1));
+        spnGenCharField.setValue(1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -141,46 +141,47 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(aboutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(chkNmDigit)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel1)
-                                .addComponent(jLabel3))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(strGenField)
-                                .addComponent(strLongCharField, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel2)
-                                .addComponent(jLabel4)))
-                        .addComponent(jLabel5)
-                        .addComponent(jSeparator1)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(chkUpLetter)
-                                .addComponent(chkLoLetter))
-                            .addGap(58, 58, 58)
-                            .addComponent(btnResetForm))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(btnGetString, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(aboutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(chkNmDigit)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel3))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(spnGenCharField, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+                                    .addComponent(spnLongCharField))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel4)))
+                            .addComponent(jLabel5)
+                            .addComponent(jSeparator1)
+                            .addComponent(chkUpLetter))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(chkLoLetter)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnResetForm, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(strGenField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(jLabel2)
+                    .addComponent(spnGenCharField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(strLongCharField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3)
-                    .addComponent(jLabel4))
+                    .addComponent(jLabel4)
+                    .addComponent(spnLongCharField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
@@ -195,7 +196,7 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                     .addComponent(btnResetForm, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnGetString, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(aboutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -208,22 +209,49 @@ public class StringGeneratorUI extends javax.swing.JFrame {
     
     private void btnResetFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetFormActionPerformed
         // TODO add your handling code here:
-        strGenField.setText("1");
-        strLongCharField.setText("10");
+        spnGenCharField.setValue("1");
+        spnLongCharField.setValue("10");
         chkNmDigit.setSelected(true);
         chkUpLetter.setSelected(false);
         chkLoLetter.setSelected(false);
     }//GEN-LAST:event_btnResetFormActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnGetStringActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGetStringActionPerformed
         // TODO add your handling code here:
-        VariableModule.lgChar = Integer.parseInt(strLongCharField.getText());
-        VariableModule.genChar = Integer.parseInt(strGenField.getText());
+        VariableModule.lgChar = Integer.parseInt(spnLongCharField.getValue().toString());
+        VariableModule.genChar = Integer.parseInt(spnGenCharField.getValue().toString());
+        
+        int aa;
+        aa = Integer.parseInt(spnGenCharField.getValue().toString());
+        
+        if (String.valueOf(aa).length() < 1 ) {
+            JOptionPane.showMessageDialog(this, "You must select at least one character option!", "Required" , JOptionPane.WARNING_MESSAGE);
+            System.exit(1);
+        }
+        else {
+            System.out.println("Proceed");
+        }
         
         if(chkNmDigit.isSelected() && !chkUpLetter.isSelected() && !chkLoLetter.isSelected()){
             //Select first checkbox
-                    new StringResult().setVisible(true);
-                    this.setVisible(false);
+                    int gc = VariableModule.genChar;
+                    switch (gc){
+                        case 1:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue.");
+                            new StringResult1().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                        default:
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                            break;
+                    }
+                    
                 }
         else if(!chkNmDigit.isSelected() && chkUpLetter.isSelected() && !chkLoLetter.isSelected()){
             //Select second checkbox
@@ -262,17 +290,11 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                 }
         
         
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void strGenFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_strGenFieldKeyTyped
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_strGenFieldKeyTyped
+    }//GEN-LAST:event_btnGetStringActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
-        ((AbstractDocument) strGenField.getDocument ()).setDocumentFilter (new CustomDocumentFilter ());
-        ((AbstractDocument) strLongCharField.getDocument ()).setDocumentFilter (new CustomDocumentFilter2 ());
+        ((DefaultFormatter)((JSpinner.DefaultEditor)spnGenCharField.getEditor()).getTextField().getFormatter()).setAllowsInvalid(false);
     }//GEN-LAST:event_formWindowOpened
 
     private void aboutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutBtnActionPerformed
@@ -318,18 +340,18 @@ public class StringGeneratorUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton aboutBtn;
+    private javax.swing.JButton btnGetString;
     private javax.swing.JButton btnResetForm;
     public static javax.swing.JCheckBox chkLoLetter;
     public static javax.swing.JCheckBox chkNmDigit;
     public static javax.swing.JCheckBox chkUpLetter;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JSeparator jSeparator1;
-    public static javax.swing.JTextField strGenField;
-    private static javax.swing.JTextField strLongCharField;
+    private javax.swing.JSpinner spnGenCharField;
+    private javax.swing.JSpinner spnLongCharField;
     // End of variables declaration//GEN-END:variables
 }
