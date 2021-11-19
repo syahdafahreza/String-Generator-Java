@@ -207,8 +207,8 @@ public class StringGeneratorUI extends javax.swing.JFrame {
     
     private void btnResetFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetFormActionPerformed
         // TODO add your handling code here:
-        spnGenCharField.setValue("1");
-        spnLongCharField.setValue("10");
+        spnGenCharField.setValue(Integer.parseInt("1"));
+        spnLongCharField.setValue(Integer.parseInt("10"));
         chkNmDigit.setSelected(true);
         chkUpLetter.setSelected(false);
         chkLoLetter.setSelected(false);
