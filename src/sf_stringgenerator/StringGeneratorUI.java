@@ -81,7 +81,12 @@ public class StringGeneratorUI extends javax.swing.JFrame {
         int i = 1;
         SpinnerModel value = new SpinnerNumberModel(i, min, max, step);
         spnGenCharField = new javax.swing.JSpinner(value);
-        spnLongCharField = new javax.swing.JSpinner();
+        int min2 = 1;
+        int max2 = 10;
+        int step2 = 1;
+        int i2 = 1;
+        SpinnerModel value2 = new SpinnerNumberModel(i2, min2, max2, step2);
+        spnLongCharField = new javax.swing.JSpinner(value2);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("String Generator 1.0");
@@ -130,8 +135,8 @@ public class StringGeneratorUI extends javax.swing.JFrame {
             }
         });
 
-        spnGenCharField.setModel(new javax.swing.SpinnerNumberModel(1, 1, 10, 1));
-        spnGenCharField.setValue(1);
+        spnLongCharField.setValue(Integer.parseInt("10"));
+        spnLongCharField.setValue(10);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
