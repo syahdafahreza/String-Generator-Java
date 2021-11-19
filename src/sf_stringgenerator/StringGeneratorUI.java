@@ -161,9 +161,9 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                         .addComponent(jLabel5)
                         .addComponent(jSeparator1)
                         .addComponent(chkUpLetter)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(chkLoLetter)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(chkLoLetter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGap(10, 10, 10)
                             .addComponent(btnResetForm, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
