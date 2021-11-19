@@ -82,7 +82,7 @@ public class StringGeneratorUI extends javax.swing.JFrame {
         SpinnerModel value = new SpinnerNumberModel(i, min, max, step);
         spnGenCharField = new javax.swing.JSpinner(value);
         int min2 = 1;
-        int max2 = 10;
+        int max2 = 25;
         int step2 = 1;
         int i2 = 1;
         SpinnerModel value2 = new SpinnerNumberModel(i2, min2, max2, step2);

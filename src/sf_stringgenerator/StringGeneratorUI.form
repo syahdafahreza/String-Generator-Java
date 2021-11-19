@@ -196,7 +196,7 @@
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JSpinner(value2)"/>
-        <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="int min2 = 1;&#xa;int max2 = 10;&#xa;int step2 = 1;&#xa;int i2 = 1;&#xa;SpinnerModel value2 = new SpinnerNumberModel(i2, min2, max2, step2);"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="int min2 = 1;&#xa;int max2 = 25;&#xa;int step2 = 1;&#xa;int i2 = 1;&#xa;SpinnerModel value2 = new SpinnerNumberModel(i2, min2, max2, step2);"/>
         <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="spnLongCharField.setValue(Integer.parseInt(&quot;10&quot;));"/>
       </AuxValues>
     </Component>
