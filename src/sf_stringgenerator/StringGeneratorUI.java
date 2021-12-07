@@ -75,18 +75,8 @@ public class StringGeneratorUI extends javax.swing.JFrame {
         btnResetForm = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         aboutBtn = new javax.swing.JButton();
-        int min = 1;
-        int max = 10;
-        int step = 1;
-        int i = 1;
-        SpinnerModel value = new SpinnerNumberModel(i, min, max, step);
-        spnGenCharField = new javax.swing.JSpinner(value);
-        int min2 = 1;
-        int max2 = 25;
-        int step2 = 1;
-        int i2 = 1;
-        SpinnerModel value2 = new SpinnerNumberModel(i2, min2, max2, step2);
-        spnLongCharField = new javax.swing.JSpinner(value2);
+        spnGenCharField = new javax.swing.JSpinner();
+        spnLongCharField = new javax.swing.JSpinner();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("String Generator 1.0");
@@ -135,8 +125,9 @@ public class StringGeneratorUI extends javax.swing.JFrame {
             }
         });
 
-        spnLongCharField.setValue(Integer.parseInt("10"));
-        spnLongCharField.setValue(10);
+        spnGenCharField.setModel(new javax.swing.SpinnerNumberModel(1, 1, 10, 1));
+
+        spnLongCharField.setModel(new javax.swing.SpinnerNumberModel(10, 1, 25, 1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -145,7 +136,6 @@ public class StringGeneratorUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(chkNmDigit)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
@@ -160,9 +150,10 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addComponent(jLabel5)
                     .addComponent(jSeparator1)
-                    .addComponent(chkUpLetter)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(chkNmDigit, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(chkUpLetter, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnGetString, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(chkLoLetter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(10, 10, 10)
@@ -249,6 +240,17 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                             new StringResult1().setVisible(true);
                             this.setVisible(false);
                             break;
+                            case 2:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue.");
+                            new StringResult2().setVisible(true);
+                            this.setVisible(false);
+                            break;
                         default:
                             JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
                             break;
@@ -296,7 +298,9 @@ public class StringGeneratorUI extends javax.swing.JFrame {
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
-        ((DefaultFormatter)((JSpinner.DefaultEditor)spnGenCharField.getEditor()).getTextField().getFormatter()).setAllowsInvalid(false);
+        int k = 12;
+        ((DefaultFormatter)((JSpinner.NumberEditor)spnGenCharField.getEditor()).getTextField().getFormatter()).setAllowsInvalid(false);
+        ((DefaultFormatter)((JSpinner.NumberEditor)spnLongCharField.getEditor()).getTextField().getFormatter()).setAllowsInvalid(false);
     }//GEN-LAST:event_formWindowOpened
 
     private void aboutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutBtnActionPerformed

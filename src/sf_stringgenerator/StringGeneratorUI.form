@@ -31,7 +31,6 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="chkNmDigit" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
@@ -50,9 +49,10 @@
                   </Group>
                   <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="jSeparator1" alignment="0" max="32767" attributes="0"/>
-                  <Component id="chkUpLetter" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="chkNmDigit" alignment="0" max="32767" attributes="0"/>
+                          <Component id="chkUpLetter" alignment="0" max="32767" attributes="0"/>
                           <Component id="btnGetString" max="32767" attributes="0"/>
                           <Component id="chkLoLetter" max="32767" attributes="0"/>
                       </Group>
@@ -183,22 +183,18 @@
       </Events>
     </Component>
     <Component class="javax.swing.JSpinner" name="spnGenCharField">
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JSpinner(value)"/>
-        <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="int min = 1;&#xa;int max = 10;&#xa;int step = 1;&#xa;int i = 1;&#xa;SpinnerModel value = new SpinnerNumberModel(i, min, max, step);"/>
-      </AuxValues>
+      <Properties>
+        <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+          <SpinnerModel initial="1" maximum="10" minimum="1" numberType="java.lang.Integer" stepSize="1" type="number"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JSpinner" name="spnLongCharField">
       <Properties>
-        <Property name="value" type="java.lang.Object" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-          <Connection code="10" type="code"/>
+        <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+          <SpinnerModel initial="10" maximum="25" minimum="1" numberType="java.lang.Integer" stepSize="1" type="number"/>
         </Property>
       </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JSpinner(value2)"/>
-        <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="int min2 = 1;&#xa;int max2 = 25;&#xa;int step2 = 1;&#xa;int i2 = 1;&#xa;SpinnerModel value2 = new SpinnerNumberModel(i2, min2, max2, step2);"/>
-        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="spnLongCharField.setValue(Integer.parseInt(&quot;10&quot;));"/>
-      </AuxValues>
     </Component>
   </SubComponents>
 </Form>
