@@ -347,28 +347,598 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                 }
         else if(!chkNmDigit.isSelected() && chkUpLetter.isSelected() && !chkLoLetter.isSelected()){
             //Select second checkbox
-                    new StringResult10().setVisible(true);
-                    this.setVisible(false);
+                    int gc = VariableModule.genChar;
+                    switch (gc){
+                        case 1:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (1)");
+                            new StringResult1().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 2:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (2)");
+                            new StringResult2().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 3:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (3)");
+                            new StringResult3().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 4:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (4)");
+                            new StringResult4().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 5:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (5)");
+                            new StringResult5().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 6:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (6)");
+                            new StringResult6().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 7:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (7)");
+                            new StringResult7().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 8:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (8)");
+                            new StringResult8().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 9:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (9)");
+                            new StringResult9().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 10:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (10)");
+                            new StringResult10().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                        default:
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                            break;
+                    }
                 }
         else if(!chkNmDigit.isSelected() && !chkUpLetter.isSelected() && chkLoLetter.isSelected()){
             //Select third checkbox
-                    new StringResult10().setVisible(true);
-                    this.setVisible(false);
+                    int gc = VariableModule.genChar;
+                    switch (gc){
+                        case 1:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (1)");
+                            new StringResult1().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 2:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (2)");
+                            new StringResult2().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 3:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (3)");
+                            new StringResult3().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 4:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (4)");
+                            new StringResult4().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 5:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (5)");
+                            new StringResult5().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 6:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (6)");
+                            new StringResult6().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 7:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (7)");
+                            new StringResult7().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 8:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (8)");
+                            new StringResult8().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 9:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (9)");
+                            new StringResult9().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 10:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (10)");
+                            new StringResult10().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                        default:
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                            break;
+                    }
                 }
         else if(chkNmDigit.isSelected() && chkUpLetter.isSelected() && !chkLoLetter.isSelected()){
             //Select fist and second checkbox
-                    new StringResult10().setVisible(true);
-                    this.setVisible(false);
+                    int gc = VariableModule.genChar;
+                    switch (gc){
+                        case 1:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (1)");
+                            new StringResult1().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 2:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (2)");
+                            new StringResult2().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 3:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (3)");
+                            new StringResult3().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 4:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (4)");
+                            new StringResult4().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 5:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (5)");
+                            new StringResult5().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 6:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (6)");
+                            new StringResult6().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 7:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (7)");
+                            new StringResult7().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 8:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (8)");
+                            new StringResult8().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 9:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (9)");
+                            new StringResult9().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 10:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (10)");
+                            new StringResult10().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                        default:
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                            break;
+                    }
                 }
         else if(chkNmDigit.isSelected() && !chkUpLetter.isSelected() && chkLoLetter.isSelected()){
             //Select first and third checkbox        
-                    new StringResult10().setVisible(true);
-                    this.setVisible(false);
+                    int gc = VariableModule.genChar;
+                    switch (gc){
+                        case 1:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (1)");
+                            new StringResult1().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 2:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (2)");
+                            new StringResult2().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 3:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (3)");
+                            new StringResult3().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 4:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (4)");
+                            new StringResult4().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 5:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (5)");
+                            new StringResult5().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 6:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (6)");
+                            new StringResult6().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 7:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (7)");
+                            new StringResult7().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 8:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (8)");
+                            new StringResult8().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 9:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (9)");
+                            new StringResult9().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 10:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (10)");
+                            new StringResult10().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                        default:
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                            break;
+                    }
                 }
         else if(!chkNmDigit.isSelected() && chkUpLetter.isSelected() && chkLoLetter.isSelected()){
             //Select second and third checkbox        
-                    new StringResult10().setVisible(true);
-                    this.setVisible(false);
+                    int gc = VariableModule.genChar;
+                    switch (gc){
+                        case 1:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (1)");
+                            new StringResult1().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 2:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (2)");
+                            new StringResult2().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 3:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (3)");
+                            new StringResult3().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 4:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (4)");
+                            new StringResult4().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 5:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (5)");
+                            new StringResult5().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 6:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (6)");
+                            new StringResult6().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 7:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (7)");
+                            new StringResult7().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 8:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (8)");
+                            new StringResult8().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 9:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (9)");
+                            new StringResult9().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 10:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (10)");
+                            new StringResult10().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                        default:
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                            break;
+                    }
                 }
         else if(!chkNmDigit.isSelected() && !chkUpLetter.isSelected() && !chkLoLetter.isSelected()){
             //No checkbox selected
@@ -377,8 +947,122 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                 }
         else{
             //Select all checkbox
-                    new StringResult10().setVisible(true);
-                    this.setVisible(false);
+                    int gc = VariableModule.genChar;
+                    switch (gc){
+                        case 1:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (1)");
+                            new StringResult1().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 2:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (2)");
+                            new StringResult2().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 3:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (3)");
+                            new StringResult3().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 4:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (4)");
+                            new StringResult4().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 5:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (5)");
+                            new StringResult5().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 6:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (6)");
+                            new StringResult6().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 7:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (7)");
+                            new StringResult7().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 8:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (8)");
+                            new StringResult8().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 9:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (9)");
+                            new StringResult9().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 10:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue. (10)");
+                            new StringResult10().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                        default:
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                            break;
+                    }
                 }
         
         
