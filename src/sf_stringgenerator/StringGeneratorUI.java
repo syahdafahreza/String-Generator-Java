@@ -262,6 +262,28 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                             new StringResult3().setVisible(true);
                             this.setVisible(false);
                             break;
+                            case 4:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue.");
+                            new StringResult4().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 5:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue.");
+                            new StringResult5().setVisible(true);
+                            this.setVisible(false);
+                            break;
                         default:
                             JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
                             break;
