@@ -236,7 +236,7 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                             JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
                     } 
                             else  //every thing is fine, you can continue.
-                            System.out.println("every thing is fine, you can continue.");
+                            System.out.println("every thing is fine, you can continue. (1)");
                             new StringResult1().setVisible(true);
                             this.setVisible(false);
                             break;
@@ -247,7 +247,7 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                             JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
                     } 
                             else  //every thing is fine, you can continue.
-                            System.out.println("every thing is fine, you can continue.");
+                            System.out.println("every thing is fine, you can continue. (2)");
                             new StringResult2().setVisible(true);
                             this.setVisible(false);
                             break;
@@ -258,7 +258,7 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                             JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
                     } 
                             else  //every thing is fine, you can continue.
-                            System.out.println("every thing is fine, you can continue.");
+                            System.out.println("every thing is fine, you can continue. (3)");
                             new StringResult3().setVisible(true);
                             this.setVisible(false);
                             break;
@@ -269,7 +269,7 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                             JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
                     } 
                             else  //every thing is fine, you can continue.
-                            System.out.println("every thing is fine, you can continue.");
+                            System.out.println("every thing is fine, you can continue. (4)");
                             new StringResult4().setVisible(true);
                             this.setVisible(false);
                             break;
@@ -280,7 +280,7 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                             JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
                     } 
                             else  //every thing is fine, you can continue.
-                            System.out.println("every thing is fine, you can continue.");
+                            System.out.println("every thing is fine, you can continue. (5)");
                             new StringResult5().setVisible(true);
                             this.setVisible(false);
                             break;
@@ -291,7 +291,7 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                             JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
                     } 
                             else  //every thing is fine, you can continue.
-                            System.out.println("every thing is fine, you can continue.");
+                            System.out.println("every thing is fine, you can continue. (6)");
                             new StringResult6().setVisible(true);
                             this.setVisible(false);
                             break;
@@ -302,7 +302,7 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                             JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
                     } 
                             else  //every thing is fine, you can continue.
-                            System.out.println("every thing is fine, you can continue.");
+                            System.out.println("every thing is fine, you can continue. (7)");
                             new StringResult7().setVisible(true);
                             this.setVisible(false);
                             break;
@@ -313,7 +313,7 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                             JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
                     } 
                             else  //every thing is fine, you can continue.
-                            System.out.println("every thing is fine, you can continue.");
+                            System.out.println("every thing is fine, you can continue. (8)");
                             new StringResult8().setVisible(true);
                             this.setVisible(false);
                             break;
@@ -324,7 +324,7 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                             JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
                     } 
                             else  //every thing is fine, you can continue.
-                            System.out.println("every thing is fine, you can continue.");
+                            System.out.println("every thing is fine, you can continue. (9)");
                             new StringResult9().setVisible(true);
                             this.setVisible(false);
                             break;
@@ -335,7 +335,7 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                             JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
                     } 
                             else  //every thing is fine, you can continue.
-                            System.out.println("every thing is fine, you can continue.");
+                            System.out.println("every thing is fine, you can continue. (10)");
                             new StringResult10().setVisible(true);
                             this.setVisible(false);
                             break;
