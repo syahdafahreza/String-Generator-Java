@@ -317,6 +317,28 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                             new StringResult8().setVisible(true);
                             this.setVisible(false);
                             break;
+                            case 9:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue.");
+                            new StringResult9().setVisible(true);
+                            this.setVisible(false);
+                            break;
+                            case 10:
+                            if(spnGenCharField.getValue().toString().isEmpty()){
+                            //error
+                            System.out.println("ERROR!");
+                            JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
+                    } 
+                            else  //every thing is fine, you can continue.
+                            System.out.println("every thing is fine, you can continue.");
+                            new StringResult10().setVisible(true);
+                            this.setVisible(false);
+                            break;
                         default:
                             JOptionPane.showMessageDialog(this, "You must generate at least one string!", "Required" , JOptionPane.WARNING_MESSAGE);
                             break;
@@ -325,27 +347,27 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                 }
         else if(!chkNmDigit.isSelected() && chkUpLetter.isSelected() && !chkLoLetter.isSelected()){
             //Select second checkbox
-                    new StringResult().setVisible(true);
+                    new StringResult10().setVisible(true);
                     this.setVisible(false);
                 }
         else if(!chkNmDigit.isSelected() && !chkUpLetter.isSelected() && chkLoLetter.isSelected()){
             //Select third checkbox
-                    new StringResult().setVisible(true);
+                    new StringResult10().setVisible(true);
                     this.setVisible(false);
                 }
         else if(chkNmDigit.isSelected() && chkUpLetter.isSelected() && !chkLoLetter.isSelected()){
             //Select fist and second checkbox
-                    new StringResult().setVisible(true);
+                    new StringResult10().setVisible(true);
                     this.setVisible(false);
                 }
         else if(chkNmDigit.isSelected() && !chkUpLetter.isSelected() && chkLoLetter.isSelected()){
             //Select first and third checkbox        
-                    new StringResult().setVisible(true);
+                    new StringResult10().setVisible(true);
                     this.setVisible(false);
                 }
         else if(!chkNmDigit.isSelected() && chkUpLetter.isSelected() && chkLoLetter.isSelected()){
             //Select second and third checkbox        
-                    new StringResult().setVisible(true);
+                    new StringResult10().setVisible(true);
                     this.setVisible(false);
                 }
         else if(!chkNmDigit.isSelected() && !chkUpLetter.isSelected() && !chkLoLetter.isSelected()){
@@ -355,7 +377,7 @@ public class StringGeneratorUI extends javax.swing.JFrame {
                 }
         else{
             //Select all checkbox
-                    new StringResult().setVisible(true);
+                    new StringResult10().setVisible(true);
                     this.setVisible(false);
                 }
         
