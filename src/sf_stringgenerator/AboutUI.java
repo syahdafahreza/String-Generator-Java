@@ -81,7 +81,7 @@ public class AboutUI extends javax.swing.JFrame {
         });
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel5.setText("©2021 Syahda Fahreza, All Rights Reserved.");
+        jLabel5.setText("©2022 Syahda Fahreza, All Rights Reserved.");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -150,7 +150,7 @@ public class AboutUI extends javax.swing.JFrame {
     private void LogoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogoMouseClicked
         // TODO add your handling code here:
         try {
-        Desktop.getDesktop().browse(new URL("https://syahdafahreza.my.id/").toURI());
+        Desktop.getDesktop().browse(new URL("https://umarkovwebsite.com/").toURI());
     } catch (Exception e) {
         e.printStackTrace();
     }
