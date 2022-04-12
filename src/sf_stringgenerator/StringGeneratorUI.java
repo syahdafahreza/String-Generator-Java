@@ -52,6 +52,7 @@ public class StringGeneratorUI extends javax.swing.JFrame {
      */
     public StringGeneratorUI() {
         initComponents();
+        Seticon();
     }
     
     /**
@@ -1132,4 +1133,8 @@ public class StringGeneratorUI extends javax.swing.JFrame {
     private javax.swing.JSpinner spnGenCharField;
     private javax.swing.JSpinner spnLongCharField;
     // End of variables declaration//GEN-END:variables
+
+    private void Seticon() {
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("Icon.png")));
+    }
 }
