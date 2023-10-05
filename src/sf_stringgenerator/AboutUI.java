@@ -81,7 +81,7 @@ public class AboutUI extends javax.swing.JFrame {
         });
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel5.setText("©2022 Syahda Fahreza, All Rights Reserved.");
+        jLabel5.setText("©2023 Syahda Fahreza, All Rights Reserved.");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
