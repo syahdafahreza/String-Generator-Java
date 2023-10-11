@@ -6,6 +6,8 @@
 package sf_stringgenerator;
 import java.net.*;
 import java.awt.*;
+import java.time.Year;
+import java.time.YearMonth;
 /**
  *
  * @author Umarkov
@@ -80,8 +82,10 @@ public class AboutUI extends javax.swing.JFrame {
             }
         });
 
+        // Get the current year
+        Year currentYear = Year.now();
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel5.setText("©2023 Syahda Fahreza, All Rights Reserved.");
+        jLabel5.setText("©"+currentYear+" Syahda Fahreza, All Rights Reserved.");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
